@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Music and Sounds/Swipe.wav" type="AudioStream" id=7]
 [ext_resource path="res://Music and Sounds/Evade.wav" type="AudioStream" id=8]
 [ext_resource path="res://HitflashShader.tres" type="Shader" id=9]
+[ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=10]
 
 [sub_resource type="ShaderMaterial" id=56]
 shader = ExtResource( 9 )
@@ -905,12 +906,15 @@ tracks/0/keys = {
 collision_layer = 2
 script = ExtResource( 1 )
 
+[node name="ShadowSprite" type="Sprite" parent="."]
+texture = ExtResource( 10 )
+
 [node name="Sprite" type="Sprite" parent="."]
 material = SubResource( 56 )
 position = Vector2( 0.5, -11 )
 texture = ExtResource( 2 )
 hframes = 60
-frame = 46
+frame = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -950,7 +954,6 @@ parameters/Run/blend_position = Vector2( 0, 1 )
 
 [node name="HitboxPivot" type="Position2D" parent="."]
 position = Vector2( 0, -7 )
-rotation = 4.71239
 
 [node name="SwordHitbox" parent="HitboxPivot" instance=ExtResource( 3 )]
 position = Vector2( -1.90735e-06, 0 )

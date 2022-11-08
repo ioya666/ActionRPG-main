@@ -49,6 +49,7 @@ animations = [ {
 [sub_resource type="CapsuleShape2D" id=8]
 
 [sub_resource type="CircleShape2D" id=9]
+radius = 19.685
 
 [sub_resource type="CircleShape2D" id=10]
 radius = 8.2732
@@ -111,7 +112,7 @@ script = ExtResource( 4 )
 material = SubResource( 12 )
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 1
+frame = 4
 playing = true
 offset = Vector2( 0, -12 )
 
