@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="HealthUI" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.028
+anchor_top = 0.039
+anchor_right = 0.253
+anchor_bottom = 0.128
+margin_left = 0.04
+margin_top = -0.02
+margin_right = 23.04
+margin_bottom = 15.96

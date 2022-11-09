@@ -10,17 +10,20 @@ onready var staminaBar = $StaminaBar
 
 func set_health(value):
 	health = clamp(value, 0, max_health)
+	health = range_lerp(health, 0, max_health, healthBar.min_value, healthBar.max_value)
 	if healthBar != null:
-		pass
+		healthBar.value = health
+		
 func set_max_health(value):
 	max_health = max(value, 1)
 	self.health = min(health, max_health)
 
 func set_stamina(value):
 	stamina = clamp(value, 0, max_health)
+	stamina = range_lerp(stamina, 0, max_stamina, staminaBar.min_value, staminaBar.max_value)
 	max_stamina = max(value, 1)
 	if staminaBar != null:
-		pass
+		staminaBar.value = stamina
 
 func set_max_stamina(value):
 	max_stamina = max(value, 1)

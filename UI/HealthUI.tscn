@@ -36,17 +36,26 @@ margin_left = 0.0320001
 margin_top = 0.00300002
 margin_right = 64.032
 margin_bottom = 16.003
-value = 65.0
 texture_under = ExtResource( 2 )
 texture_progress = ExtResource( 3 )
 texture_progress_offset = Vector2( 6, 6 )
 
 [node name="StaminaBar" type="TextureProgress" parent="HealthUI"]
-margin_left = -4.0
-margin_top = 13.0
-margin_right = 60.0
-margin_bottom = 29.0
+anchor_left = -0.056
+anchor_top = 1.182
+anchor_right = -0.056
+anchor_bottom = 1.182
+margin_left = 0.0320001
+margin_top = -0.00200081
+margin_right = 64.032
+margin_bottom = 15.998
 value = 100.0
 texture_under = ExtResource( 5 )
 texture_progress = ExtResource( 6 )
 texture_progress_offset = Vector2( 6, 6 )
+
+[node name="Label" type="Label" parent="HealthUI"]
+margin_left = 6.0
+margin_right = 46.0
+margin_bottom = 14.0
+text = "10/10"
