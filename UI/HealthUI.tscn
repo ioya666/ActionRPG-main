@@ -40,6 +40,17 @@ texture_under = ExtResource( 2 )
 texture_progress = ExtResource( 3 )
 texture_progress_offset = Vector2( 6, 6 )
 
+[node name="HealthBarText" type="Label" parent="HealthUI/HealthBar"]
+margin_left = 3.0
+margin_top = 4.0
+margin_right = 193.0
+margin_bottom = 34.0
+rect_scale = Vector2( 0.3, 0.3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "10"
+align = 1
+valign = 1
+
 [node name="StaminaBar" type="TextureProgress" parent="HealthUI"]
 anchor_left = -0.056
 anchor_top = 1.182

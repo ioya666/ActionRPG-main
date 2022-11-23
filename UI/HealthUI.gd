@@ -6,17 +6,20 @@ var stamina = 4 setget set_stamina
 var max_stamina = 4 setget set_max_stamina
 
 onready var healthBar = $HealthBar
+onready var healthBarText = $HealthBar/HealthBarText
 onready var staminaBar = $StaminaBar
 
 func set_health(value):
 	health = clamp(value, 0, max_health)
+	healthBarText.text = str(int(health),str("/"), max_health)
 	health = range_lerp(health, 0, max_health, healthBar.min_value, healthBar.max_value)
 	if healthBar != null:
 		healthBar.value = health
-		
+
 func set_max_health(value):
 	max_health = max(value, 1)
 	self.health = min(health, max_health)
+	
 
 func set_stamina(value):
 	stamina = clamp(value, 0, max_health)
