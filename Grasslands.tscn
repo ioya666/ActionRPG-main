@@ -567,7 +567,7 @@ stream = ExtResource( 13 )
 autoplay = true
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( -122, 11 )
+position = Vector2( -101, 11 )
 scale = Vector2( 2.18145, 1.34697 )
 texture = ExtResource( 3 )
 offset = Vector2( 55.9261, -8.16648 )
@@ -656,6 +656,21 @@ position = Vector2( -131, 80 )
 [node name="Bats" type="YSort" parent="YSort"]
 
 [node name="Bat" parent="YSort/Bats" instance=ExtResource( 8 )]
+position = Vector2( 224, 76 )
+
+[node name="Bat2" parent="YSort/Bats" instance=ExtResource( 8 )]
+position = Vector2( 224, 76 )
+
+[node name="Bat3" parent="YSort/Bats" instance=ExtResource( 8 )]
+position = Vector2( 224, 76 )
+
+[node name="Bat4" parent="YSort/Bats" instance=ExtResource( 8 )]
+position = Vector2( 224, 76 )
+
+[node name="Bat5" parent="YSort/Bats" instance=ExtResource( 8 )]
+position = Vector2( 224, 76 )
+
+[node name="Bat6" parent="YSort/Bats" instance=ExtResource( 8 )]
 position = Vector2( 224, 76 )
 
 [node name="WaySign" type="YSort" parent="YSort"]
